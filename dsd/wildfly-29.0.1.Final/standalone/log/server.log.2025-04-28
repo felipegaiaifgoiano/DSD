@@ -1,0 +1,41 @@
+2025-04-28 17:36:33,643 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/deployments
+2025-04-28 17:36:33,844 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 6.2.0.Final (Apache CXF 4.0.0) 
+2025-04-28 17:36:37,855 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-04-28 17:36:38,055 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-04-28 17:36:38,289 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) WFLYSRV0018: Deployment "deployment.spring-mvc-error-handling.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-04-28 17:36:38,691 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment spring-mvc-error-handling.war
+2025-04-28 17:36:39,128 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 8.0.0.Final
+2025-04-28 17:36:40,401 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 5.1.1 (SP1)
+2025-04-28 17:36:42,543 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 94) No Spring WebApplicationInitializer types detected on classpath
+2025-04-28 17:36:42,685 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 94) Inicializando Mojarra 4.0.2 para o contexto '/spring-mvc-error-handling'
+2025-04-28 17:36:43,577 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0021: Registered web context: '/spring-mvc-error-handling' for server 'default-server'
+2025-04-28 17:36:43,707 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "spring-mvc-error-handling.war" (runtime-name : "spring-mvc-error-handling.war")
+2025-04-28 17:36:43,804 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-04-28 17:36:43,812 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-04-28 17:36:43,813 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-04-28 17:36:43,822 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) started in 22465ms - Started 929 of 1149 services (322 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2025-04-28 17:46:54,527 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/spring-mvc-error-handling' from server 'default-server'
+2025-04-28 17:46:55,915 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment spring-mvc-error-handling.war (runtime-name: spring-mvc-error-handling.war) in 1528ms
+2025-04-28 17:46:55,978 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "spring-mvc-error-handling.war" (runtime-name: "spring-mvc-error-handling.war")
+2025-04-28 17:47:05,711 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) WFLYSRV0018: Deployment "deployment.spring-mvc-error-handling.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-04-28 17:47:05,799 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment spring-mvc-error-handling.war
+2025-04-28 17:47:06,769 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 120) 2 Spring WebApplicationInitializers detected on classpath
+2025-04-28 17:47:06,901 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 120) Inicializando Mojarra 4.0.2 para o contexto '/spring-mvc-error-handling'
+2025-04-28 17:47:07,215 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 120) Initializing Spring DispatcherServlet 'dispatcher'
+2025-04-28 17:47:07,216 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 120) Initializing Servlet 'dispatcher'
+2025-04-28 17:47:08,694 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 120) Completed initialization in 1478 ms
+2025-04-28 17:47:08,695 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 120) WFLYUT0021: Registered web context: '/spring-mvc-error-handling' for server 'default-server'
+2025-04-28 17:47:08,844 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "spring-mvc-error-handling.war" with deployment "spring-mvc-error-handling.war"
+2025-04-28 17:48:19,224 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 120) WFLYUT0022: Unregistered web context: '/spring-mvc-error-handling' from server 'default-server'
+2025-04-28 17:48:19,225 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 120) Destroying Spring FrameworkServlet 'dispatcher'
+2025-04-28 17:48:19,378 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment spring-mvc-error-handling.war (runtime-name: spring-mvc-error-handling.war) in 170ms
+2025-04-28 17:48:19,380 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "spring-mvc-error-handling.war" (runtime-name: "spring-mvc-error-handling.war")
+2025-04-28 17:48:32,234 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-4) WFLYSRV0018: Deployment "deployment.spring-mvc-error-handling.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-04-28 17:48:32,330 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment spring-mvc-error-handling.war
+2025-04-28 17:48:33,346 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 146) 1 Spring WebApplicationInitializers detected on classpath
+2025-04-28 17:48:33,420 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 146) Inicializando Mojarra 4.0.2 para o contexto '/spring-mvc-error-handling'
+2025-04-28 17:48:33,596 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 146) Initializing Spring DispatcherServlet 'dispatcher'
+2025-04-28 17:48:33,597 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 146) Initializing Servlet 'dispatcher'
+2025-04-28 17:48:34,793 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 146) Completed initialization in 1195 ms
+2025-04-28 17:48:34,794 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 146) WFLYUT0021: Registered web context: '/spring-mvc-error-handling' for server 'default-server'
+2025-04-28 17:48:34,831 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "spring-mvc-error-handling.war" with deployment "spring-mvc-error-handling.war"
