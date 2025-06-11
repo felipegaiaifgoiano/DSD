@@ -1,4 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello World!</title>
+</head>
 <body>
 <h2><%= "Hello World!" %></h2>
 </body>

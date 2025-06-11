@@ -1,6 +1,0 @@
-com/example/demo/DemoApplication.class
-com/example/demo/WebConfig.class
-com/example/demo/exception/CustomException.class
-com/example/demo/controller/HomeController.class
-com/example/demo/exception/GlobalExceptionHandler.class
-com/example/demo/controller/ErrorController.class

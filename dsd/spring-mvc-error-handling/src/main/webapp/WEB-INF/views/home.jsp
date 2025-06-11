@@ -1,13 +1,12 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring MVC - Home</title>
+    <title>Spring MVC - HTTP errors</title>
 </head>
 <body>
     <h1>${message}</h1>
     
-    <h2>Testar cÃ³digos de erro:</h2>
+    <h2>Testar códigos de erro:</h2>
     <ul>
         <li><a href="trigger-error/400">400 Bad Request</a></li>
         <li><a href="trigger-error/403">403 Forbidden</a></li>

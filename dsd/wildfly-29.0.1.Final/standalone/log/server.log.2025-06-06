@@ -1,0 +1,316 @@
+2025-06-06 00:31:19,567 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.0.Final
+2025-06-06 00:31:25,924 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.1.Final
+2025-06-06 00:31:25,951 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-06-06 00:31:26,289 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) starting
+2025-06-06 00:31:26,292 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/72/brqd65f952l_l041vwbs8w6w0000gn/T/
+	java.library.path = /Users/felipenunesgaia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.14+8-LTS-191
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.14
+	java.version.date = 2025-01-21
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.14+8-LTS-191
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final
+	jboss.host.name = macbook-air-de-felipe
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbook-air-de-felipe
+	jboss.qualified.host.name = macbook-air-de-felipe.local
+	jboss.server.base.dir = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone
+	jboss.server.config.dir = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/data
+	jboss.server.log.dir = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/log
+	jboss.server.name = macbook-air-de-felipe
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 12.7.6
+	path.separator = :
+	program.name = JBossTools: WildFly 29.0.1
+	stderr.encoding = UTF-8
+	stdout.encoding = UTF-8
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = org.jboss.modules.Main -mp /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/bin
+	user.home = /Users/felipenunesgaia
+	user.language = pt
+	user.name = felipenunesgaia
+	user.timezone = America/Sao_Paulo
+2025-06-06 00:31:26,302 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=JBossTools: WildFly 29.0.1 -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/Users/felipenunesgaia/dsd/wildfly-29.0.1.Final -Dorg.jboss.logmanager.nocolor=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages 
+2025-06-06 00:31:28,368 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 2.2.1.Final
+2025-06-06 00:31:30,019 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2025-06-06 00:31:30,059 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found spring-mvc-forms-db.war in deployment directory. To trigger deployment create a file called spring-mvc-forms-db.war.dodeploy
+2025-06-06 00:31:30,239 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-06-06 00:31:30,281 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.9.Final
+2025-06-06 00:31:30,300 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.9.Final
+2025-06-06 00:31:30,396 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-06-06 00:31:30,399 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "spring-mvc-forms-db.war" (runtime-name: "spring-mvc-forms-db.war")
+2025-06-06 00:31:30,423 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2025-06-06 00:31:30,445 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-06-06 00:31:30,467 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-06-06 00:31:30,513 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-06-06 00:31:30,514 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2025-06-06 00:31:30,515 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.5.Final
+2025-06-06 00:31:30,571 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2025-06-06 00:31:30,669 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.27.Final
+2025-06-06 00:31:30,688 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.3.Final)
+2025-06-06 00:31:30,690 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-06-06 00:31:30,719 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-06-06 00:31:30,738 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-06-06 00:31:30,798 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-06-06 00:31:30,800 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-06-06 00:31:30,806 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2025-06-06 00:31:30,837 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2025-06-06 00:31:30,838 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-06-06 00:31:30,841 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-06-06 00:31:30,852 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2025-06-06 00:31:30,992 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2025-06-06 00:31:30,992 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2025-06-06 00:31:31,280 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.3.7.Final starting
+2025-06-06 00:31:31,390 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2025-06-06 00:31:31,390 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-06-06 00:31:31,392 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) Queuing requests.
+2025-06-06 00:31:31,395 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2025-06-06 00:31:31,398 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-06-06 00:31:31,489 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2025-06-06 00:31:32,251 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/felipenunesgaia/dsd/wildfly-29.0.1.Final/standalone/deployments
+2025-06-06 00:31:32,485 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 6.2.0.Final (Apache CXF 4.0.0) 
+2025-06-06 00:31:36,422 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-06-06 00:31:36,569 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-06-06 00:31:42,565 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) WFLYSRV0018: Deployment "deployment.spring-mvc-forms-db.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-06-06 00:31:42,815 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment spring-mvc-forms-db.war
+2025-06-06 00:31:43,081 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 8.0.0.Final
+2025-06-06 00:31:43,550 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-6) Activating CDI extension for Spring Data JPA repositories
+2025-06-06 00:31:44,073 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.4)
+2025-06-06 00:31:44,168 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 5.1.1 (SP1)
+2025-06-06 00:31:44,306 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = spring-mvc-forms-db.war_com.mysql.cj.jdbc.Driver_8_4
+2025-06-06 00:31:44,764 INFO  [org.jboss.weld.Event] (MSC service thread 1-8) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-06-06 00:31:46,307 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 81) 1 Spring WebApplicationInitializers detected on classpath
+2025-06-06 00:31:46,467 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 81) Inicializando Mojarra 4.0.2 para o contexto '/spring-mvc-forms-db'
+2025-06-06 00:31:47,652 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 81) Initializing Spring DispatcherServlet 'dispatcher'
+2025-06-06 00:31:47,654 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 81) Initializing Servlet 'dispatcher'
+2025-06-06 00:31:48,005 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 81) Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-06 00:31:48,082 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 81) Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2025-06-06 00:31:48,385 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 81) HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-06 00:31:48,486 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 81) HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-06 00:31:48,518 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 81) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2025-06-06 00:31:48,551 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] (ServerService Thread Pool -- 81) HHH000026: Second-level cache disabled
+2025-06-06 00:31:48,901 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] (ServerService Thread Pool -- 81) No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-06 00:31:49,240 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 81) HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-06 00:31:49,242 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 81) HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-06 00:31:50,935 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (ServerService Thread Pool -- 81) HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2025-06-06 00:31:51,026 INFO  [stdout] (ServerService Thread Pool -- 81) Hibernate: 
+2025-06-06 00:31:51,026 INFO  [stdout] (ServerService Thread Pool -- 81)     create table Cliente (
+2025-06-06 00:31:51,027 INFO  [stdout] (ServerService Thread Pool -- 81)         id bigint not null auto_increment,
+2025-06-06 00:31:51,027 INFO  [stdout] (ServerService Thread Pool -- 81)         email varchar(255),
+2025-06-06 00:31:51,027 INFO  [stdout] (ServerService Thread Pool -- 81)         nome varchar(255),
+2025-06-06 00:31:51,027 INFO  [stdout] (ServerService Thread Pool -- 81)         primary key (id)
+2025-06-06 00:31:51,027 INFO  [stdout] (ServerService Thread Pool -- 81)     ) engine=InnoDB
+2025-06-06 00:31:51,065 INFO  [stdout] (ServerService Thread Pool -- 81) Hibernate: 
+2025-06-06 00:31:51,065 INFO  [stdout] (ServerService Thread Pool -- 81)     alter table Produto 
+2025-06-06 00:31:51,065 INFO  [stdout] (ServerService Thread Pool -- 81)        add column cliente_id bigint
+2025-06-06 00:31:51,152 INFO  [stdout] (ServerService Thread Pool -- 81) Hibernate: 
+2025-06-06 00:31:51,152 INFO  [stdout] (ServerService Thread Pool -- 81)     alter table Produto 
+2025-06-06 00:31:51,152 INFO  [stdout] (ServerService Thread Pool -- 81)        add constraint FK3dhhfkpqmnnhbypsm79j9dwtf 
+2025-06-06 00:31:51,153 INFO  [stdout] (ServerService Thread Pool -- 81)        foreign key (cliente_id) 
+2025-06-06 00:31:51,153 INFO  [stdout] (ServerService Thread Pool -- 81)        references Cliente (id)
+2025-06-06 00:31:51,216 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 81) Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-06 00:31:52,031 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 81) Completed initialization in 4376 ms
+2025-06-06 00:31:52,031 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0021: Registered web context: '/spring-mvc-forms-db' for server 'default-server'
+2025-06-06 00:31:52,176 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "spring-mvc-forms-db.war" (runtime-name : "spring-mvc-forms-db.war")
+2025-06-06 00:31:52,273 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-06-06 00:31:52,280 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-06-06 00:31:52,281 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-06-06 00:31:52,288 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) started in 33794ms - Started 930 of 1150 services (322 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2025-06-06 00:32:20,295 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 00:32:20,296 INFO  [stdout] (default task-1)     select
+2025-06-06 00:32:20,297 INFO  [stdout] (default task-1)         p1_0.id,
+2025-06-06 00:32:20,300 INFO  [stdout] (default task-1)         p1_0.cliente_id,
+2025-06-06 00:32:20,301 INFO  [stdout] (default task-1)         p1_0.descricao,
+2025-06-06 00:32:20,301 INFO  [stdout] (default task-1)         p1_0.nome,
+2025-06-06 00:32:20,302 INFO  [stdout] (default task-1)         p1_0.nomeArquivo,
+2025-06-06 00:32:20,302 INFO  [stdout] (default task-1)         p1_0.preco 
+2025-06-06 00:32:20,302 INFO  [stdout] (default task-1)     from
+2025-06-06 00:32:20,302 INFO  [stdout] (default task-1)         Produto p1_0
+2025-06-06 00:34:54,604 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 00:34:54,607 INFO  [stdout] (default task-1)     select
+2025-06-06 00:34:54,607 INFO  [stdout] (default task-1)         c1_0.id,
+2025-06-06 00:34:54,608 INFO  [stdout] (default task-1)         c1_0.email,
+2025-06-06 00:34:54,608 INFO  [stdout] (default task-1)         c1_0.nome 
+2025-06-06 00:34:54,609 INFO  [stdout] (default task-1)     from
+2025-06-06 00:34:54,609 INFO  [stdout] (default task-1)         Cliente c1_0
+2025-06-06 00:36:10,485 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 00:36:10,486 INFO  [stdout] (default task-1)     select
+2025-06-06 00:36:10,487 INFO  [stdout] (default task-1)         c1_0.id,
+2025-06-06 00:36:10,487 INFO  [stdout] (default task-1)         c1_0.email,
+2025-06-06 00:36:10,487 INFO  [stdout] (default task-1)         c1_0.nome 
+2025-06-06 00:36:10,488 INFO  [stdout] (default task-1)     from
+2025-06-06 00:36:10,488 INFO  [stdout] (default task-1)         Cliente c1_0
+2025-06-06 00:36:17,481 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 00:36:17,482 INFO  [stdout] (default task-1)     select
+2025-06-06 00:36:17,482 INFO  [stdout] (default task-1)         c1_0.id,
+2025-06-06 00:36:17,482 INFO  [stdout] (default task-1)         c1_0.email,
+2025-06-06 00:36:17,483 INFO  [stdout] (default task-1)         c1_0.nome 
+2025-06-06 00:36:17,483 INFO  [stdout] (default task-1)     from
+2025-06-06 00:36:17,487 INFO  [stdout] (default task-1)         Cliente c1_0
+2025-06-06 00:36:19,714 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 00:36:19,715 INFO  [stdout] (default task-1)     select
+2025-06-06 00:36:19,715 INFO  [stdout] (default task-1)         c1_0.id,
+2025-06-06 00:36:19,715 INFO  [stdout] (default task-1)         c1_0.email,
+2025-06-06 00:36:19,715 INFO  [stdout] (default task-1)         c1_0.nome 
+2025-06-06 00:36:19,716 INFO  [stdout] (default task-1)     from
+2025-06-06 00:36:19,716 INFO  [stdout] (default task-1)         Cliente c1_0
+2025-06-06 09:46:08,325 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = spring-mvc-forms-db.war_com.mysql.cj.jdbc.Driver_8_4
+2025-06-06 09:46:08,390 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 30) WFLYUT0022: Unregistered web context: '/spring-mvc-forms-db' from server 'default-server'
+2025-06-06 09:46:08,474 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 30) Destroying Spring FrameworkServlet 'dispatcher'
+2025-06-06 09:46:08,534 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 30) Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-06 09:46:08,911 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment spring-mvc-forms-db.war (runtime-name: spring-mvc-forms-db.war) in 655ms
+2025-06-06 09:46:09,153 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0009: Undeployed "spring-mvc-forms-db.war" (runtime-name: "spring-mvc-forms-db.war")
+2025-06-06 09:46:34,186 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0004: Found spring-mvc-forms-db.war in deployment directory. To trigger deployment create a file called spring-mvc-forms-db.war.dodeploy
+2025-06-06 09:46:34,206 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "spring-mvc-forms-db.war" (runtime-name: "spring-mvc-forms-db.war")
+2025-06-06 09:46:43,571 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) WFLYSRV0018: Deployment "deployment.spring-mvc-forms-db.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-06-06 09:46:43,658 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment spring-mvc-forms-db.war
+2025-06-06 09:46:43,820 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-7) Activating CDI extension for Spring Data JPA repositories
+2025-06-06 09:46:44,053 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.4)
+2025-06-06 09:46:44,123 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = spring-mvc-forms-db.war_com.mysql.cj.jdbc.Driver_8_4
+2025-06-06 09:46:44,186 INFO  [org.jboss.weld.Event] (MSC service thread 1-6) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-06-06 09:46:44,704 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 133) 1 Spring WebApplicationInitializers detected on classpath
+2025-06-06 09:46:44,732 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 133) Inicializando Mojarra 4.0.2 para o contexto '/spring-mvc-forms-db'
+2025-06-06 09:46:45,038 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 133) Initializing Spring DispatcherServlet 'dispatcher'
+2025-06-06 09:46:45,040 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 133) Initializing Servlet 'dispatcher'
+2025-06-06 09:46:45,260 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 133) Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-06 09:46:45,328 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 133) Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2025-06-06 09:46:45,586 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 133) HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-06 09:46:45,640 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 133) HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-06 09:46:45,672 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 133) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2025-06-06 09:46:45,691 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] (ServerService Thread Pool -- 133) HHH000026: Second-level cache disabled
+2025-06-06 09:46:45,927 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] (ServerService Thread Pool -- 133) No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-06 09:46:46,171 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 133) HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-06 09:46:46,172 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 133) HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-06 09:46:47,129 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (ServerService Thread Pool -- 133) HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2025-06-06 09:46:47,250 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 133) Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-06 09:46:48,003 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 133) Completed initialization in 2960 ms
+2025-06-06 09:46:48,004 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 133) WFLYUT0021: Registered web context: '/spring-mvc-forms-db' for server 'default-server'
+2025-06-06 09:46:48,044 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0010: Deployed "spring-mvc-forms-db.war" (runtime-name : "spring-mvc-forms-db.war")
+2025-06-06 09:47:14,741 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 09:47:14,744 INFO  [stdout] (default task-1)     select
+2025-06-06 09:47:14,744 INFO  [stdout] (default task-1)         c1_0.id,
+2025-06-06 09:47:14,744 INFO  [stdout] (default task-1)         c1_0.email,
+2025-06-06 09:47:14,744 INFO  [stdout] (default task-1)         c1_0.nome 
+2025-06-06 09:47:14,744 INFO  [stdout] (default task-1)     from
+2025-06-06 09:47:14,745 INFO  [stdout] (default task-1)         Cliente c1_0
+2025-06-06 09:47:21,016 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 09:47:21,016 INFO  [stdout] (default task-1)     select
+2025-06-06 09:47:21,016 INFO  [stdout] (default task-1)         c1_0.id,
+2025-06-06 09:47:21,017 INFO  [stdout] (default task-1)         c1_0.email,
+2025-06-06 09:47:21,017 INFO  [stdout] (default task-1)         c1_0.nome 
+2025-06-06 09:47:21,018 INFO  [stdout] (default task-1)     from
+2025-06-06 09:47:21,020 INFO  [stdout] (default task-1)         Cliente c1_0
+2025-06-06 09:48:23,211 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = spring-mvc-forms-db.war_com.mysql.cj.jdbc.Driver_8_4
+2025-06-06 09:48:23,217 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 141) WFLYUT0022: Unregistered web context: '/spring-mvc-forms-db' from server 'default-server'
+2025-06-06 09:48:23,227 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 141) Destroying Spring FrameworkServlet 'dispatcher'
+2025-06-06 09:48:23,243 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 141) Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-06 09:48:23,411 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment spring-mvc-forms-db.war (runtime-name: spring-mvc-forms-db.war) in 217ms
+2025-06-06 09:48:23,417 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "spring-mvc-forms-db.war" (runtime-name: "spring-mvc-forms-db.war")
+2025-06-06 09:48:28,997 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.spring-mvc-forms-db.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-06-06 09:48:29,065 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment spring-mvc-forms-db.war
+2025-06-06 09:48:29,171 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-5) Activating CDI extension for Spring Data JPA repositories
+2025-06-06 09:48:29,355 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.4)
+2025-06-06 09:48:29,412 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = spring-mvc-forms-db.war_com.mysql.cj.jdbc.Driver_8_4
+2025-06-06 09:48:29,452 INFO  [org.jboss.weld.Event] (MSC service thread 1-4) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-06-06 09:48:29,977 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 144) 1 Spring WebApplicationInitializers detected on classpath
+2025-06-06 09:48:30,001 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 144) Inicializando Mojarra 4.0.2 para o contexto '/spring-mvc-forms-db'
+2025-06-06 09:48:30,234 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 144) Initializing Spring DispatcherServlet 'dispatcher'
+2025-06-06 09:48:30,234 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 144) Initializing Servlet 'dispatcher'
+2025-06-06 09:48:30,426 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 144) Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-06 09:48:30,472 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 144) Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2025-06-06 09:48:30,700 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 144) HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-06 09:48:30,749 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 144) HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-06 09:48:30,773 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 144) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2025-06-06 09:48:30,788 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] (ServerService Thread Pool -- 144) HHH000026: Second-level cache disabled
+2025-06-06 09:48:31,060 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] (ServerService Thread Pool -- 144) No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-06 09:48:31,275 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 144) HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-06 09:48:31,277 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 144) HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-06 09:48:32,173 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (ServerService Thread Pool -- 144) HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2025-06-06 09:48:32,257 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 144) Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-06 09:48:32,846 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 144) Completed initialization in 2611 ms
+2025-06-06 09:48:32,846 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 144) WFLYUT0021: Registered web context: '/spring-mvc-forms-db' for server 'default-server'
+2025-06-06 09:48:32,887 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "spring-mvc-forms-db.war" with deployment "spring-mvc-forms-db.war"
+2025-06-06 09:48:57,156 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 09:48:57,156 INFO  [stdout] (default task-1)     select
+2025-06-06 09:48:57,156 INFO  [stdout] (default task-1)         c1_0.id,
+2025-06-06 09:48:57,156 INFO  [stdout] (default task-1)         c1_0.email,
+2025-06-06 09:48:57,156 INFO  [stdout] (default task-1)         c1_0.nome 
+2025-06-06 09:48:57,156 INFO  [stdout] (default task-1)     from
+2025-06-06 09:48:57,156 INFO  [stdout] (default task-1)         Cliente c1_0
+2025-06-06 09:49:06,117 INFO  [stdout] (default task-1) Hibernate: 
+2025-06-06 09:49:06,118 INFO  [stdout] (default task-1)     select
+2025-06-06 09:49:06,118 INFO  [stdout] (default task-1)         p1_0.id,
+2025-06-06 09:49:06,118 INFO  [stdout] (default task-1)         p1_0.cliente_id,
+2025-06-06 09:49:06,118 INFO  [stdout] (default task-1)         p1_0.descricao,
+2025-06-06 09:49:06,119 INFO  [stdout] (default task-1)         p1_0.nome,
+2025-06-06 09:49:06,119 INFO  [stdout] (default task-1)         p1_0.nomeArquivo,
+2025-06-06 09:49:06,119 INFO  [stdout] (default task-1)         p1_0.preco 
+2025-06-06 09:49:06,119 INFO  [stdout] (default task-1)     from
+2025-06-06 09:49:06,120 INFO  [stdout] (default task-1)         Produto p1_0
+2025-06-06 09:57:41,532 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2025-06-06 09:57:41,582 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-06-06 09:57:41,594 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-06-06 09:57:41,671 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 162) WFLYUT0022: Unregistered web context: '/spring-mvc-forms-db' from server 'default-server'
+2025-06-06 09:57:41,692 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = spring-mvc-forms-db.war_com.mysql.cj.jdbc.Driver_8_4
+2025-06-06 09:57:41,697 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-06-06 09:57:41,700 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 162) Destroying Spring FrameworkServlet 'dispatcher'
+2025-06-06 09:57:41,818 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 162) Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-06 09:57:41,857 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2025-06-06 09:57:41,867 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-06-06 09:57:41,875 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-06-06 09:57:41,889 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2025-06-06 09:57:41,890 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-06-06 09:57:41,890 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2025-06-06 09:57:41,890 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2025-06-06 09:57:41,894 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.3.7.Final stopping
+2025-06-06 09:57:42,033 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment spring-mvc-forms-db.war (runtime-name: spring-mvc-forms-db.war) in 372ms
+2025-06-06 09:57:42,068 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 29.0.1.Final (WildFly Core 21.1.1.Final) stopped in 449ms

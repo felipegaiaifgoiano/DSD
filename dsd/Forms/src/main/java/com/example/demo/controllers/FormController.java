@@ -14,7 +14,7 @@ public class FormController {
     // Rota raiz - Página inicial
 	@GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("mensagem", "Bem-vindo ao exemplo Spring MVC!");
+        model.addAttribute("mensagem", "Bem-vindo ao exemplo de formulário em Spring MVC!");
         return "home";
     }
 
@@ -28,7 +28,7 @@ public class FormController {
 
     // Exemplo de POST simples
     @PostMapping("/exemplo-post")
-    public String exemploPost(@RequestParam String usuario, Model model, HttpSession session) {
+    public String exemploPost(@RequestParam(name = "usuario") String usuario, Model model, HttpSession session) {
         // Armazenando na sessão
         session.setAttribute("usuarioLogado", usuario);
         

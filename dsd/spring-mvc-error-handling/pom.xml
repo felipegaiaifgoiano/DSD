@@ -2,9 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
+    <groupId>com.example.demo</groupId>
     <artifactId>spring-mvc-error-handling</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
@@ -38,6 +39,13 @@
             <version>${jakarta.servlet-api.version}</version>
             <scope>provided</scope>
         </dependency>
+   
+        <!-- JSTL for JSP -->
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>  
         
         <dependency>
     		<groupId>org.glassfish.web</groupId>
@@ -45,18 +53,6 @@
     		<version>2.0.0</version>
 		</dependency>
 
-        <!-- JSTL for JSP -->
-        <dependency>
-            <groupId>jakarta.servlet.jsp.jstl</groupId>
-            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-            <version>2.0.0</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>org.glassfish.web</groupId>
-            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
-            <version>2.0.0</version>
-        </dependency>
 
         <!-- For JSP compilation -->
         <dependency>

@@ -1,6 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>500 - Erro interno</title>
 </head>
@@ -8,6 +7,6 @@
     <h1>Erro ${status} - Erro interno do servidor</h1>
     <p>${error}</p>
     <p>Path: ${path}</p>
-    <a href="/">Voltar para a p√°gina inicial</a>
+    <a href="/">Voltar para a p·gina inicial</a>
 </body>
 </html>
