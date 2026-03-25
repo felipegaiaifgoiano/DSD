@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Início</title>
+    
+    <style>
+    .vip {
+    	border: 2px solid purple;
+    }
+    
+    .normal {
+    	border: 2px solid gray;
+    }
+    
+    </style>
+    
+  </head>
+  <body>
+
+	<!-- Exemplo 1 -->
+	<p style="border:1px solid red" th:text="${nome}">Nome aqui</p>
+	
+	<!-- Exemplo 2 -->
+	<p style="border:1px solid green" th:if="${vip}">Cliente VIP</p>
+	<p style="border:1px solid pink" th:unless="${vip}">Cliente comum</p>
+	
+	<!-- Exemplo 3 -->
+	<ul>
+  		<li style="border:1px solid black" th:each="p : ${produtos}" th:text="${p}"></li>
+	</ul>
+	
+	<!-- Exemplo 4 -->
+	<a th:href="@{/detalhe}">Ir para detalhe</a>
+
+	<!-- Exemplo 5 -->
+	<table style="border:1px solid blue">
+		<tr th:each="pc : ${produtosC}">
+			<td th:text="${pc.nome}"></td>
+			<td th:text="${pc.preco}"></td>
+		</tr>
+	</table>
+	
+	<br/>
+	
+	<!-- Exemplo 6 -->
+	<form style="border:1px solid yellow" th:object="${cliente}" th:action="@{/salvar}" method="post">
+  		<input th:field="*{nome}"/><br/>
+  		<input th:field="*{email}"/><br/>
+	    <button type="submit">Enviar</button>
+	</form>
+	
+	<br/>
+	
+	<!-- Exemplo 7 -->
+	<p th:class="${vip} ? 'vip' : 'normal'">Cliente status</p>
+
+  </body>
+</html>
