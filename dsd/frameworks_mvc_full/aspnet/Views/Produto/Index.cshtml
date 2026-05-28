@@ -1,0 +1,45 @@
+@model List<App.Models.Produto>
+
+<h1>Produtos</h1>
+
+<form action="/Produto/Salvar"
+      method="post">
+
+    <input name="nome"
+           placeholder="Nome" />
+
+    <select name="categoriaId">
+
+        @foreach (var c in ViewBag.Categorias)
+        {
+            <option value="@c.Id">
+                @c.Nome
+            </option>
+        }
+
+    </select>
+
+    <button type="submit">
+        Salvar
+    </button>
+
+</form>
+
+<hr>
+
+<h2>Produtos cadastrados</h2>
+
+<ul>
+
+@foreach (var p in Model)
+{
+    <li>
+
+        @p.Nome
+        -
+        @p.Categoria?.Nome
+
+    </li>
+}
+
+</ul>

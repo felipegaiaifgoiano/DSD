@@ -1,0 +1,39 @@
+<h1>Produtos</h1>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    <input
+        name="nome"
+        placeholder="Nome">
+
+    <select name="categoria_id">
+        {% for c in categorias %}
+            <option value="{{ c.id }}">
+                {{ c.nome }}
+            </option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">
+        Salvar
+    </button>
+
+</form>
+
+<hr>
+
+<h2>Produtos cadastrados</h2>
+
+<ul>
+{% for p in produtos %}
+    <li>
+        {{ p.nome }}
+        -
+        {{ p.categoria.nome }}
+
+    </li>
+{% endfor %}
+
+</ul>
