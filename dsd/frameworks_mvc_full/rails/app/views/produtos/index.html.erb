@@ -1,0 +1,53 @@
+<h1>Produtos</h1>
+
+<form action="/salvar"
+      method="post">
+
+  <input type="hidden"
+         name="authenticity_token"
+         value="<%= form_authenticity_token %>">
+
+  <input name="nome"
+         placeholder="Nome">
+
+  <select name="categoria_id">
+
+    <% @categorias.each do |c| %>
+
+      <option value="<%= c.id %>">
+
+        <%= c.nome %>
+
+      </option>
+
+    <% end %>
+
+  </select>
+
+  <button type="submit">
+
+    Salvar
+
+  </button>
+
+</form>
+
+<hr>
+
+<h2>Produtos cadastrados</h2>
+
+<ul>
+
+<% @produtos.each do |p| %>
+
+  <li>
+
+    <%= p.nome %>
+    -
+    <%= p.categoria.nome %>
+
+  </li>
+
+<% end %>
+
+</ul>

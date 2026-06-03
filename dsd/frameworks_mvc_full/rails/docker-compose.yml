@@ -1,0 +1,6 @@
+services:
+
+  rails:
+    build: .
+    ports:
+      - "8084:3000"
