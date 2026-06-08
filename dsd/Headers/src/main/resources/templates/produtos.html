@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html xmlns:th=
+"http://www.thymeleaf.org">
+
+<body>
+
+<h1>Produtos</h1>
+
+<form action="/salvar" method="post">
+
+    <input name="nome" placeholder="Nome">
+
+    <select name="categoriaId">
+        <option
+            th:each="c : ${categorias}"
+            th:value="${c.id}"
+            th:text="${c.nome}">
+        </option>
+    </select>
+
+    <button type="submit">
+        Salvar
+    </button>
+</form>
+
+<hr>
+
+<h2>Produtos cadastrados</h2>
+
+<ul>
+    <li th:each="p : ${produtos}">
+        <span th:text=
+            "${p.nome}">
+        </span>
+        -
+        <span th:text=
+            "${p.categoria.nome}">
+        </span>
+    </li>
+</ul>
+
+</body>
+</html>
